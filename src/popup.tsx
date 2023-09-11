@@ -34,17 +34,17 @@ const Popup = () => {
 
   return (
     <>
-      <ul style={{ minWidth: "700px" }}>
-        <li>Current URL: {currentURL}</li>
-        <li>Current Time: {new Date().toLocaleTimeString()}</li>
-      </ul>
-      <button
-        onClick={() => setCount(count + 1)}
-        style={{ marginRight: "5px" }}
+      <div
+        style={{
+          display: "flex",
+          alignContent: "center",
+          alignItems: "center",
+          minWidth: "250px",
+          minHeight: "250px",
+        }}
       >
-        count up
-      </button>
-      <button onClick={changeBackground}>change background</button>
+        <button onClick={changeBackground}>Prettify</button>
+      </div>
     </>
   );
 };
